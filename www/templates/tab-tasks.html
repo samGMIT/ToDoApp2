@@ -1,0 +1,28 @@
+<ion-view view-title="ToDoApp">
+    <ion-nav-bar class="headercolor"></ion-nav-bar>
+  <ion-content class="contentcolor padding">
+      
+      <div class="card">
+          <div class="cardcolor item item-divider">
+            Task Name
+          </div>
+          <div class="cardcolor item item-text-wrap">
+           <label class="item item-input">
+			   <!-- will allow user to enter information -->
+            <input type="text" placeholder="This is where you type" ng-model="tasks.newTask">
+          </label>
+          </div>
+        </div>
+	  <!-- will add information to the tasks-->
+      <button class="cardcolor button button-block" ng-click="addTask()">Add Task</button>
+    <ion-list>
+		<!-- show all the tasks -->
+      <ion-item class="item-remove-animate item-icon-right" ng-repeat="task in data.tasks">
+        <h3>{{ task.title }}</h3>
+          <i class="icon ion-android-delete"></i>
+		  <!-- will delete selected item -->
+          <ion-option-button class="cardcolor" ng-click="remove(task)">Delete</ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

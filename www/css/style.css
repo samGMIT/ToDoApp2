@@ -1,0 +1,13 @@
+/* Empty. Add your own CSS if you like */
+/*Set colors for backgrounds*/
+.cardcolor{
+    background-color: #b35900;
+    color: white;
+}
+.contentcolor{
+    background-color: #663300;
+}
+.headercolor{
+    background-color:  #336600;
+    color: white;
+}
